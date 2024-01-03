@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tip-Calculator</title>
+  </head>
+  <body>
+
+    <h2>Tip Calculator</h2>
+  <div id="tip-form-container">
+    <form id="tip-form">
+      <label for="billAmount">Bill Amount:</label><br>
+      <input type="number" id="billAmount" name="billAmount" required><br>
+      <label for="tipPercentage">Tip Percentage:</label><br>
+      <input type="number" id="tipPercentage" name="tipPercentage" required><br>
+      <button onclick="calculateTip()">Calculate Tip</button><br>
+      </form>
+     
+     <div id="results">
+        <p id="tipAmount"></p>
+     </div>
+      <button type="button" onclick="resetForm()">Reset</button>
+   </div>
+
+  <script src="script.js"></script>
+  </body>
+
+</html>
+
+
+
+<!---
+tip amount = Bill amount x (tip percentage / 100)  
+You should have a form where a user is able to input the cost of the meal.
+-The form should also let the user choose the percentage tip they want to give.
+-When they submit the form, show them the total with tip added.
+-Display the total tip amount as well so they know how much they're tipping.
+-->
