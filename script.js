@@ -16,7 +16,7 @@ Step 4: Define another function so the user can reset calculator.
 JavaScript
 
 First thing I did on line 37 was to retrieve the form element's id from the DOM and attached an addEventListener method. It will then listen for the 
-the submit event when the user clicks to submit the form. I used the preventDefault method on line 38 to keep the form from being submitted and reloading
+the submit event when the user submits the form. I used the preventDefault method on line 38 to keep the form from being submitted and reloading
 the page.
 
 Next, on lines 40 and 41 I declared the variables for the bill amount and tip percentage, which will retrieve the values of the form element input entered by the user. 
@@ -34,7 +34,7 @@ and clear the text from the p element from the DOM
 
 
 
-document.getElementById('tip-form').addEventListener('click', function(event) {
+document.getElementById('tip-form').addEventListener('submit', function(event) {
 	event.preventDefault();
 
 	let billAmount = document.getElementById('billAmount').value;
